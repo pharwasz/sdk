@@ -24,6 +24,13 @@ export {
 export { bytesToHex, hexToBytes } from './utils';
 export { fetchAnnouncements } from './announcements';
 export { DEPLOYMENTS, getDeployment } from './deployments';
+export {
+  buildBatchSendTx,
+  buildAnnouncementData,
+  STELLAR_MAX_OPERATIONS,
+  DEFAULT_BASE_FEE,
+  DEFAULT_BATCH_SENDER_THRESHOLD,
+} from './tx-builder';
 export type { StellarChainDeployment } from './deployments';
 export type {
   HexString,
@@ -32,4 +39,7 @@ export type {
   GeneratedStealthAddress,
   Announcement,
   MatchedAnnouncement,
+  StealthPayment,
+  BuildBatchSendTxParams,
+  BuildBatchSendTxResult,
 } from './types';
